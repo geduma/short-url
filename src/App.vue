@@ -3,6 +3,12 @@ import { ref } from 'vue'
 import Loader from './components/Loader.component.vue'
 
 try {
+  fetch(`${import.meta.env.VITE_API_URL}`)
+    .then(res => res.json())
+    .then(data => {
+      console.info(data)
+    })
+  
   if (window.location.pathname.split('/')[1].length > 0) {
     fetch(`${import.meta.env.VITE_API_URL}/${window.location.pathname.split('/')[1]}`, {
       method: 'GET',
