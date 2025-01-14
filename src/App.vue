@@ -32,7 +32,7 @@ try {
     })
   } else throw new Error('error resolving the url request')
 })
-} catch (error) console.error(error)
+} catch (error) { console.error(error) }
 
 </script>
 
