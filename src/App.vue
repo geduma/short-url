@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue'
 import Loader from './components/Loader.component.vue'
 
 try {
